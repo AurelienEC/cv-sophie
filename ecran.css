@@ -1,0 +1,183 @@
+@media only screen and (min-width: 1036px)  {
+    @font-face {
+        font-family: ABeeZee;
+        src: url(font/ABeeZee-Regular.otf);
+    }
+    body{
+        font-family: ABeeZee;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: 30% 20% 50%;
+        grid-template-rows: repeat(7, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        .sidebar { 
+            grid-area: 1 / 1 / 8 / 2; 
+            background-color: #FFCC00;
+            text-align: center;
+            margin-right: 50px;        
+        }
+        .avatar{
+            padding-top: 10px;
+        }
+        .sidebar h3{
+            background-color: #333;
+            color: #FFCC00;
+            margin: 15px 0px;
+            font-variant-caps: all-petite-caps;
+            font-size: 27px;        
+        }
+        p.contact{
+            text-align: left;   
+            font-variant: small-caps;
+            color: #333;
+            font-weight: bold;
+            width: 90%;
+            margin: 0px auto 10px auto;
+        }
+        p.apropos{
+            text-align: justify;
+            width: 90%;
+            margin: 0px auto;
+        }
+        h3.loisirs{
+            margin-top: 250px;
+        }
+        .picto{
+            max-width: 18%;
+        }
+
+        h1{
+            font-size: 58px;
+            margin-bottom: 0px;
+        }
+        .prenom{
+            color: #FFCC00;
+            font-weight: bold;
+        }
+        .nom{
+            font-weight: lighter;
+        }
+        h2{
+            font-variant: small-caps;
+            font-weight: 600px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            letter-spacing: 0.239em;
+        }
+        .couleur_jaune{
+            border-bottom: 5px solid #FFCC00;
+        }
+        .formation h3, .experience h3, .recommandation h3{
+            border-bottom: 2px solid #FFCC00;
+            text-indent: 40px;
+        }
+        .formation h3{
+            background: url("images/toge.png") no-repeat  center left;
+        }
+        .experience h3{
+            background: url("images/entreprise.png") no-repeat  center left;
+        }
+        .recommandation h3{
+            background: url("images/stylo.png") no-repeat  center left;
+        }
+        .banniere { 
+            grid-area: 1 / 2 / 1 / 4;   
+        }
+        .formation { 
+            grid-area: 2 / 2 / 2 / 4; 
+            margin: 0px;
+            padding: 0px;
+        }
+        h3{
+        font-variant: small-caps;
+        font-size: 2em;  
+        }    
+        ul.dateFormation{
+            float: left;
+            margin-bottom: 10px;
+            list-style: none;
+        }
+        li.premiere_puce{
+            list-style-image: url('images/puce1.png');
+        }    
+        ul.descriptionFormation, ul.descriptionexperience{
+            float: left;
+            list-style: none;
+            margin-left: 200px;
+        }
+        .experience { 
+            grid-area: 3 / 2 / 3 / 4;
+            clear: both;
+        }
+        ul.dateexperience, ul.recommandation1{
+            float: left;
+            list-style: none;
+        }     
+        .recommandation{ 
+            grid-area: 4 / 2 / 4 / 4;
+            clear: both;
+        }       
+        ul.recommandation2{
+            float: left;
+            list-style: none;
+            margin-left: 50px;
+        }
+}
+
+
+
+/*CSS pour affichage mobile & tablette */
+
+
+@media only screen and (max-width: 1035px) {
+        @font-face {
+        font-family: ABeeZee;
+        src: url(font/ABeeZee-Regular.otf);
+    }
+    body{
+        font-family: ABeeZee;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    .avatar, .sidebar, .banniere{
+        text-align: center;
+    }
+    .sidebar h3, h3.souligne{
+        background-color: #FFCC00;
+        text-align: center;
+    }
+    .picto{
+        max-width: 35px;
+    }
+    .prenom{
+        color: #FFCC00;
+        font-weight: bold;     
+    }
+    .nom{
+        font-weight: lighter;
+    } 
+    li.premiere_puce{
+        list-style-image: url('images/puce1.png');
+    }    
+    ul.dateFormation, ul.descriptionFormation, ul.descriptionexperience, ul.dateexperience, ul.recommandation1, ul.recommandation2{
+        list-style: none;
+    }
+    .banniere{
+        position: absolute;
+        margin-top: -510px;
+        margin-left: 35px;
+        
+    }
+    .formation{
+        margin-top: -10px;
+    }
+    .contact{
+        margin-top: 10px;
+    }
+}
+
+    
+

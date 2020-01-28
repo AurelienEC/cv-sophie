@@ -1,0 +1,30 @@
+
+@media only screen and (max-width: 1024px) {
+        @font-face {
+        font-family: ABeeZee;
+        src: url(font/ABeeZee-Regular.otf);
+    }
+    body{
+        font-family: ABeeZee;
+        background-color: blueviolet;
+    }
+    .avatar{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .prenom{
+        color: #FFCC00;
+        font-weight: bold;
+        text-align: center;
+    }
+    .nom{
+        font-weight: lighter;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
